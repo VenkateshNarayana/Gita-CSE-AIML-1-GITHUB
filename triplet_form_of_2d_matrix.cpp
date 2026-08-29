@@ -36,6 +36,7 @@ int main(){
 	int k = 1; //row counter for the triplet matrix
 	for(int i=0;i<rows;i++){
 		for(int j=0;j<cols;j++){
+			//step3: add the (r,c,v)
 			if(mat_1[i][j]!=0){
 				trip_mat1[k][0] = i; //original matrix row
 				trip_mat1[k][1] = j; //original matrix col
@@ -44,7 +45,7 @@ int main(){
 			}
 		}
 	}
-	//display the triplet form
+	//Step4: display the triplet form
 	display_2d_matrix(trip_mat1,non_zero_count+1,3);
 }
 int display_2d_matrix(int mat[][3],int rows,int cols){
